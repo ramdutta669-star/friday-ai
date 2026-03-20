@@ -5,9 +5,9 @@ from langchain_core.messages import HumanMessage, AIMessage
 import logging
 import time
 from config import GROQ_API_KEYS, GROQ_MODEL, JARVIS_SYSTEM_PROMPT, GENERAL_CHAT_ADDENDUM
-from app.services.vector_store import VectorStoreService
-from app.utils.time_info import get_time_information
-from app.utils.retry import  with_retry
+from vector_store import VectorStoreService
+from time_info import get_time_information
+from retry import  with_retry
 
 logger = logging.getLogger("F.I.R.D.A.Y")
 
