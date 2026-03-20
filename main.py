@@ -15,7 +15,7 @@ import base64
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
 import edge_tts
-from app.models import ChatRequest, ChatResponse, TTSRequest
+from models import ChatRequest, ChatResponse, TTSRequest
 
 RATE_LIMIT_MESSAGE = (
     "You've reached your daily API limit for this assistant. "
