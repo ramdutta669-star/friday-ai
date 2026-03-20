@@ -5,9 +5,9 @@ from pathlib import Path
 from typing import List, Optional, Dict, Iterator
 import uuid
 from config import CHATS_DATA_DIR, MAX_CHAT_HISTORY_TURNS
-from app.models import ChatMessage, ChatHistory
-from app.services.groq_service import GroqService
-from app.services.realtime_service import RealtimeGroqService
+from models import ChatMessage, ChatHistory
+from groq_service import GroqService
+from realtime_service import RealtimeGroqService
 
 logger = logging.getLogger("F.R.I.D.A.Y")
 SAVE_EVERY_N_CHUNKS = 5
