@@ -3,9 +3,9 @@ from tavily import TavilyClient
 import logging
 import os
 import time
-from app.services.groq_service import GroqService, escape_curly_braces, AllGroqApisFailedError
-from app.services.vector_store import VectorStoreService
-from app.utils.retry import with_retry
+from groq_service import GroqService, escape_curly_braces, AllGroqApisFailedError
+from vector_store import VectorStoreService
+from retry import with_retry
 from config import REALTIME_CHAT_ADDENDUM, GROQ_API_KEYS, GROQ_MODEL
 
 logger = logging.getLogger("F.I.R.D.A.Y")
