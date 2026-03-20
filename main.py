@@ -62,6 +62,9 @@ groq_service: GroqService = None
 realtime_service: RealtimeGroqService = None
 chat_service: ChatService = None
 
+@app.get("/")
+def home():
+    return {"message": "FRIDAY is running"}
 def print_title():
     title = """
     ╔══════════════════════════════════════════════════════════════════════╗
