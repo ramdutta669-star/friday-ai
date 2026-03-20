@@ -1,0 +1,26 @@
+fastapi
+uvicorn[standard]
+langchain
+langchain-groq
+langchain-community
+langchain-core
+sentence-transformers
+faiss-cpu
+python-dotenv
+pydantic
+numpy
+torch
+transformers
+requests
+rich
+tavily-python
+cohere
+langchain-huggingface
+edge-tts
+
+# --- New Automation Requirements ---
+pywhatkit                  # YouTube aur WhatsApp automation ke liye
+screen-brightness-control  # Brightness control karne ke liye
+pycaw                      # System volume control ke liye
+comtypes                   # Windows audio interface ke liye zaroori
+psutil                     # Apps close karne aur processes manage karne ke liye
