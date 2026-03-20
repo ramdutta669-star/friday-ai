@@ -27,10 +27,10 @@ def _is_rate_limit_error(exc: Exception) -> bool:
     msg = str(exc).lower()
     return "429" in str(exc) or "rate limit" in msg or "tokens per day" in msg
 
-from app.services.vector_store import VectorStoreService
-from app.services.groq_service import GroqService, AllGroqApisFailedError
-from app.services.realtime_service import RealtimeGroqService
-from app.services.chat_service import ChatService
+from vector_store import VectorStoreService
+from groq_service import GroqService, AllGroqApisFailedError
+from realtime_service import RealtimeGroqService
+from chat_service import ChatService
 
 from config import (
     VECTOR_STORE_DIR, GROQ_API_KEYS, GROQ_MODEL, TAVILY_API_KEY,
