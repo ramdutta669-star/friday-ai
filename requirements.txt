@@ -9,3 +9,4 @@ pydantic
 requests
 tavily-python
 langchain-huggingface
+
